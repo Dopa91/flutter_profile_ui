@@ -1,12 +1,16 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:miniprofile/fairytail_char.dart';
 import 'package:miniprofile/information_item.dart';
 
 class InformationGrid extends StatelessWidget {
   const InformationGrid({
     super.key,
+    required this.profile,
   });
+
+  final FairytailChar profile;
 
   @override
   Widget build(BuildContext context) {
@@ -32,17 +36,16 @@ class InformationGrid extends StatelessWidget {
               icon: Icons.home,
               color: Colors.blue,
               title: "Guild",
-              details: "FairyTail, Magnolia",
+              details: profile.guild,
             ),
             SizedBox(
               height: 20.0,
             ),
             InformationItem(
-              icon: Icons.auto_awesome,
-              color: Colors.yellowAccent,
-              title: "Magic",
-              details: "Spatial & Sword Magic, Telekinesis",
-            ),
+                icon: Icons.auto_awesome,
+                color: Colors.yellowAccent,
+                title: "Magic",
+                details: profile.magic),
             SizedBox(
               height: 20.0,
             ),
@@ -50,17 +53,16 @@ class InformationGrid extends StatelessWidget {
               icon: Icons.favorite,
               color: Colors.pinkAccent,
               title: "Loves",
-              details: "Eating cakes",
+              details: profile.loves,
             ),
             SizedBox(
               height: 20.0,
             ),
             InformationItem(
-              icon: Icons.people,
-              color: Colors.lightGreen,
-              title: "Team",
-              details: "Team Natsu",
-            ),
+                icon: Icons.people,
+                color: Colors.lightGreen,
+                title: "Team",
+                details: profile.team),
           ],
         ),
       ),
