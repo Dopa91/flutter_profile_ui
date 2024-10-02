@@ -70,7 +70,7 @@ class CustomProfileSite extends StatelessWidget {
                   child: Card(
                     margin: EdgeInsets.fromLTRB(0.0, 45.0, 0.0, 0.0),
                     child: InformationGrid(
-                      profile: memberList[1],
+                      profile: profile,
                     ),
                   ),
                 ),
@@ -91,17 +91,17 @@ class CustomProfileSite extends StatelessWidget {
                   InfoBoxItem(
                     title: "Battles",
                     subtitle: counter.toString(),
-                    profile: memberList[0],
+                    profile: profile,
                   ),
                   InfoBoxItem(
                     title: 'Birthday',
                     subtitle: profile.birthday,
-                    profile: memberList[0],
+                    profile: profile,
                   ),
                   InfoBoxItem(
                     title: 'Age',
                     subtitle: profile.age.toString(),
-                    profile: memberList[0],
+                    profile: profile,
                   ),
                 ],
               ),
