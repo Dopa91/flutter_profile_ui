@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:miniprofile/fairytail_char.dart';
-import 'package:miniprofile/fairytail_char_memberlist.dart';
 import 'package:miniprofile/info_box_item.dart';
 import 'package:miniprofile/information_grid.dart';
 

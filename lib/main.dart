@@ -2,11 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:miniprofile/custom_profile.dart';
-import 'package:miniprofile/custom_profile_happy.dart';
 import 'package:miniprofile/fairytail_char_memberlist.dart';
-import 'package:miniprofile/info_box_item.dart';
-import 'package:miniprofile/information_grid.dart';
-import 'package:miniprofile/information_item.dart';
 
 void main() {
   runApp(MaterialApp(
