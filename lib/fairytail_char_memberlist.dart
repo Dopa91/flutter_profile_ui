@@ -26,4 +26,16 @@ final List<FairytailChar> memberList = [
     guild: "FairyTail, Magnolia",
     image: "assets/erza.jpg",
   ),
+  FairytailChar(
+    image: "assets/natsu.jpg",
+    battles: counter,
+    magic: "Fire Dragon Slayer Magic",
+    loves: "Lucy",
+    team: "Team Natsu, Fires",
+    name: "Natsu Doraguniru",
+    occupation: "Mage",
+    birthday: "January 16",
+    age: 18,
+    guild: "FairyTail",
+  )
 ];
