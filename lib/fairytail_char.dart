@@ -8,8 +8,10 @@ class FairytailChar {
   final String loves;
   final String team;
   final int battles;
+  final String image;
 
   FairytailChar({
+    required this.image,
     required this.battles,
     required this.magic,
     required this.loves,
