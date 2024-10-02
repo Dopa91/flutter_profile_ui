@@ -1,8 +1,9 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:miniprofile/info_box_item.dart';
 import 'package:miniprofile/information_grid.dart';
-import 'package:miniprofile/information_item.dart';
+//import 'package:miniprofile/information_item.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -97,74 +98,32 @@ class _ProfileState extends State<Profile> {
             ],
           ),
           Positioned(
-              top: MediaQuery.of(context).size.height * 0.45,
-              left: 20.0,
-              right: 20.0,
-              child: Card(
-                  child: Padding(
+            top: MediaQuery.of(context).size.height * 0.45,
+            left: 20.0,
+            right: 20.0,
+            child: Card(
+              child: Padding(
                 padding: EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                        child: Column(
-                      children: [
-                        Text(
-                          'Battles',
-                          style: TextStyle(
-                              color: Colors.grey[400], fontSize: 14.0),
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Text(
-                          "$counter",
-                          style: TextStyle(
-                            fontSize: 15.0,
-                          ),
-                        )
-                      ],
-                    )),
-                    Container(
-                      child: Column(children: [
-                        Text(
-                          'Birthday',
-                          style: TextStyle(
-                              color: Colors.grey[400], fontSize: 14.0),
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Text(
-                          'April 7th',
-                          style: TextStyle(
-                            fontSize: 15.0,
-                          ),
-                        )
-                      ]),
+                    InfoBoxItem(
+                      title: "Battles",
+                      subtitle: counter.toString(),
                     ),
-                    Container(
-                        child: Column(
-                      children: [
-                        Text(
-                          'Age',
-                          style: TextStyle(
-                              color: Colors.grey[400], fontSize: 14.0),
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Text(
-                          '19 yrs',
-                          style: TextStyle(
-                            fontSize: 15.0,
-                          ),
-                        )
-                      ],
-                    )),
+                    InfoBoxItem(
+                      title: 'Birthday',
+                      subtitle: 'April 7th',
+                    ),
+                    InfoBoxItem(
+                      title: 'Age',
+                      subtitle: '19 yrs',
+                    ),
                   ],
                 ),
-              )))
+              ),
+            ),
+          ),
         ],
       ),
     );
